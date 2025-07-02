@@ -1,0 +1,102 @@
+ /* General Page Styles */
+ body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #1f4037, #99f2c8);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 28px;
+  color: #f60202;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.timer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+/* Digital Timer Styles */
+#digital-timer {
+  background: #c5c3c3;
+  color: #333;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+/* Analog Clock Styles */
+#analog-clock {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border: 8px solid #c5c3c3;
+  border-radius: 50%;
+  background: #333;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Numbers on the clock face */
+.clock-number {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+}
+
+.clock-number:nth-child(1) { top: 5%; left: 50%; } /* 12 */
+.clock-number:nth-child(2) { top: 50%; left: 95%; } /* 3 */
+.clock-number:nth-child(3) { top: 95%; left: 50%; } /* 6 */
+.clock-number:nth-child(4) { top: 50%; left: 5%; } /* 9 */
+
+/* Clock Hands */
+#analog-clock div {
+  position: absolute;
+  background: #d7d7d7;
+  transform-origin: 50% 90%;
+  border-radius: 2px;
+}
+
+#hand-seconds {
+  width: 2px;
+  height: 110px;
+  top: 10px;
+  left: 124px;
+  background: #ff3333;
+  box-shadow: 0 0 6px #ff3333;
+}
+
+#hand-minutes {
+  width: 4px;
+  height: 100px;
+  top: 20px;
+  left: 123px;
+  background: #fff;
+}
+
+#hand-hours {
+  width: 6px;
+  height: 70px;
+  top: 50px;
+  left: 122px;
+  background: #fff;
+}
